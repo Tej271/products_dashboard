@@ -30,7 +30,7 @@ const FavoritesPage: React.FC = () => {
           <p className="mt-1 text-gray-500">Add some products to your favorites to see them here.</p>
         </div>
       ) : (
-        <div className="grid grid-cols-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
           {favoriteProducts.map((product) => (
             <ProductCard
               key={product.id}

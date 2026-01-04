@@ -88,7 +88,7 @@ const ProductDetailPage: React.FC = () => {
                 <span className="text-3xl font-bold text-gray-900">
                   ${product.price.toFixed(2)}
                 </span>
-                <Button variant="primary" size="lg">
+                <Button variant="primary" size="md">
                   Add to Cart
                 </Button>
               </div>
