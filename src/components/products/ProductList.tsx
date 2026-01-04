@@ -73,7 +73,7 @@ const ProductList: React.FC = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
-        <div className="flex gap-4 w-full md:w-auto">
+        <div className="flex gap-4 w-auto sm:w-full">
           <select
             className="p-2 border rounded-md w-full md:w-auto"
             value={selectedCategory}
