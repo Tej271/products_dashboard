@@ -19,7 +19,7 @@ const initialState: FavoritesState = {
 };
 
 const favoritesSlice = createSlice({
-  name: 'favorites',
+  name: "favorites",
   initialState,
   reducers: {
     toggleFavorite: (state, action: PayloadAction<number>) => {
@@ -30,9 +30,9 @@ const favoritesSlice = createSlice({
         state.favoriteIds.splice(index, 1);
       }
       try {
-        localStorage.setItem('favorites', JSON.stringify(state.favoriteIds));
+        localStorage.setItem("favorites", JSON.stringify(state.favoriteIds));
       } catch (error) {
-        console.error('Error saving favorites to localStorage', error);
+        console.error("Error saving favorites to localStorage", error);
       }
     },
   },
